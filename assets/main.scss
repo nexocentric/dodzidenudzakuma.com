@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Karla-Regular';
+  src: url('./fonts/karla-regular.ttf') format('woff2');
+}
+
+$brand-light-black: #000000;
+$brand-light-white: #ffffff;
+$brand-light-silver: #c2c2c2;
+$brand-light-mint: #a1e2c6;
+$brand-light-gold: #ffd200;
+$brand-light-carmel: #b99150;
+
+$brand-dark-black: findDarkColor($brand-light-black);
+$brand-dark-white: findDarkColor($brand-light-white);
+$brand-dark-silver: findDarkColor($brand-light-silver);
+$brand-dark-mint: findDarkColor($brand-light-mint);
+$brand-dark-gold: findDarkColor($brand-light-gold);
+$brand-dark-carmel: findDarkColor($brand-light-carmel);
+
+// Update Bulma's global variables
+$family-sans-serif: "Karla-Regular", sans-serif;
+//$grey-dark: $brown;
+//$grey-light: $beige-light;
+$primary: $brand-light-gold;
+//$link: $pink;
+$widescreen-enabled: true;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+//$body-background-color: $beige-lighter;
+//$control-border-width: 2px;
+//$input-border-color: transparent;
+//$input-shadow: none;
+
+@import "../node_modules/bulma/bulma.sass";
+
+$brand-dark-black: findDarkColor($brand-light-black);
+$brand-dark-white: findDarkColor($brand-light-white);
+$brand-dark-silver: findDarkColor($brand-light-silver);
+$brand-dark-mint: findDarkColor($brand-light-mint);
+$brand-dark-gold: findDarkColor($brand-light-gold);
+$brand-dark-carmel: findDarkColor($brand-light-carmel);
+
+.row {
+  @extend .columns
+}
+
+#tester-xxx .row:nth-child(1) div:first-child {
+  background: $brand-light-silver;
+}
+
+#tester-xxx .row:nth-child(1) div:last-child {
+  background: $brand-dark-silver;
+  color: $brand-light-white;
+}
+
+#tester-xxx .row:nth-child(2) div:first-child {
+  background: $brand-light-mint;
+}
+
+#tester-xxx .row:nth-child(2) div:last-child {
+  background: $brand-dark-mint;
+  color: $brand-light-white;
+}
+
+#tester-xxx .row:nth-child(3) div:first-child {
+  background: $brand-light-gold;
+}
+
+#tester-xxx .row:nth-child(3) div:last-child {
+  background: $brand-dark-gold;
+  color: $brand-light-white;
+}
+
+#tester-xxx .row:nth-child(4) div:first-child {
+  background: $brand-light-carmel;
+}
+
+#tester-xxx .row:nth-child(4) div:last-child {
+  background: $brand-dark-carmel;
+  color: $brand-light-white;
+}
