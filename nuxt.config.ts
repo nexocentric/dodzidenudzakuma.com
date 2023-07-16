@@ -5,6 +5,6 @@ export default defineNuxtConfig({
     // Load a Node.js module directly (here it's a Sass file)
     // 'bulma',
     // CSS file in the project
-    '~/assets/main.sass'
+    '~/assets/main.scss'
   ]
 })
